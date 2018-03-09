@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+Programmer: TeamBus
+Final Project
+CIS 4700: Mobile Commerce Development
+Spring 2014
+Due date: 04/21/14
+Date completed: 04/21/14
+*************************************
+* We provide a list of bus routes that pass by WMU main campus.
+ (No.3, 11 and 16)
+*************************************
+-->
+    
+    <!-- TextView for 'Select a route'. -->
+    <TextView
+        android:id="@+id/routeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#5d6153"
+        android:textStyle="bold"
+        android:background="@color/beige" 
+        android:textSize="@dimen/routeText" />
+
+    <!-- List of bus routes will be displayed here. -->
+    <ListView
+        android:id="@+id/browseListview"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/routeInfo"
+        android:background="@color/beige" >
+
+    </ListView>
+
+</RelativeLayout>

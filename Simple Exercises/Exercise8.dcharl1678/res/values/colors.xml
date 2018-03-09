@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 8
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/18/13
+Date completed: 11/18/13
+*************************************
+This app shows uses tabs to show the different ways of transportation when traveling
+Each tab displays an Image and title using a Textview 
+Added the color white
+*************************************!-->
+<resources>
+    <color name="white">#FFFFFF</color>
+    
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dchar5146
+Lab 01
+CIS 4700
+Spring 2014
+Due date: 2/12/14
+Date completed: 2/11/14
+*************************************
+Simple wmu app
+Features:
+Marks on a map:
+Current location with address and coordinates
+WMU Location
+Proximity Alert:
+This app lets you set a proximity alert to the following places:
+Schenaider hall
+Waldo library
+The recreation center
+The Bernhard center
+If you click the main icon it will show a picture of wmu using a fragment
+
+A fragment will be set on the framelayout
+uses a gridlayout to display 2 buttons
+*************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+
+     <FrameLayout
+         android:id="@+id/fragment_swap"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent" >
+</FrameLayout>
+         <GridLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:columnCount="2" >
+
+             <ImageButton
+                 android:id="@+id/myLocationBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="0"
+                 android:layout_gravity="left|bottom"
+                 android:layout_row="0"
+                 android:background="@null"
+                 android:contentDescription="@string/MyLocation"
+                 android:src="@drawable/mylocation" />
+
+             <ImageButton
+                 android:id="@+id/proximityAlertBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1"
+                 android:layout_gravity="right|bottom"
+                 android:layout_row="0"
+                 android:background="@null"
+                 android:contentDescription="@string/ProximityAlert"
+                 android:src="@drawable/proximity" />
+
+         </GridLayout>
+
+</RelativeLayout>

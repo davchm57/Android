@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab03
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 11/06/13
+* Date completed: 11/04/13
+*************************************
+This app have a list view that lets you choose different things to do
+2 Classes which function is to open a browser and to go a website
+2 Classes with large images
+1 Class which function is to play music 
+1 Class with a gallery
+Added red, blue, white, yellow and green color codes 
+*************************************!-->
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+  	 <color name="white">#FFFFFF</color>
+  	  <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+</resources>

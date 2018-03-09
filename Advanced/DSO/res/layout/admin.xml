@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Admin Console"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnadminback"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btnresult"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:text="Results" />
+
+    <Button
+        android:id="@+id/btnmemberslist"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnmemberdelete"
+        android:layout_alignRight="@+id/btnmemberdelete"
+        android:layout_below="@+id/btnmemberdelete"
+        android:layout_marginTop="22dp"
+        android:text="Members list" />
+
+    <Button
+        android:id="@+id/btnmembers"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnresult"
+        android:layout_alignRight="@+id/btnresult"
+        android:layout_below="@+id/btnresult"
+        android:layout_marginTop="22dp"
+        android:text="Add a member" />
+
+    <Button
+        android:id="@+id/btnmemberdelete"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnmembers"
+        android:layout_alignRight="@+id/btnmembers"
+        android:layout_below="@+id/btnmembers"
+        android:layout_marginTop="22dp"
+        android:text="Delete member" />
+
+    <Button
+        android:id="@+id/btnreset"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnmemberslist"
+        android:layout_alignRight="@+id/btnmemberslist"
+        android:layout_below="@+id/btnmemberslist"
+        android:layout_marginTop="22dp"
+        android:text="Reset votes" />
+
+</RelativeLayout>

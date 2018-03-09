@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical" >
+
+    <!--
+Programmer: TeamBus
+Final project
+CIS 4700: Mobile Commerce Development
+Spring 2014
+Due date: 04/21/14
+Date completed: 04/21/14
+*************************************
+* This file is the main page for our application.
+* There are four buttons on the main page and each button
+  will direct users different functions of the application.
+*************************************
+-->
+
+    
+    <!-- 'Favorite Stops' button. -->
+    <Button
+        android:id="@+id/btnFavStops"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/sred"
+        android:text="@string/btn_favstops"
+        style="@style/btnStyleBeige"
+        android:textSize="25sp" />
+
+    <!-- 'Favorite Routes' button. -->
+    <Button
+        android:id="@+id/btnFavRoutes"
+        style="@style/btnStyleBeige"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFavStops"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/ic_heart"
+        android:text="@string/btn_favroutes"
+        android:textSize="25sp" />
+
+    <!-- 'Stops near me' button. -->
+    <Button
+        android:id="@+id/btnNearMe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFavRoutes"
+        style="@style/btnStyleBeige"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/ic_map"
+        android:text="@string/btn_nearme"
+        android:textSize="25sp" />
+
+    <!-- 'Browse bus route' button. -->
+    <Button
+        android:id="@+id/btnRoutes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNearMe"
+        android:layout_alignParentLeft="true"
+        style="@style/btnStyleBeige"
+        android:drawableLeft="@drawable/ic_bus"
+        android:text="@string/btn_route"
+        android:textSize="25sp" />
+
+    <!-- A bus image in the main screen. -->
+    <ImageView
+        android:id="@+id/imgBus"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btnRoutes"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/img_bus"
+        android:src="@drawable/bus2"/>
+
+</RelativeLayout>

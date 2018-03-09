@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*************************************
+ * Programmer: David Charles
+ * Class ID: dchar5146
+ * Lab 03
+ * CIS 4700
+ * Spring 2014
+ * Due date: 3/28/14
+ * Date completed: 3/25/14
+ *************************************
+ Package Tracker app
+ Features:
+ TAB 1-Lets you add a package:
+	-You can add a package entering a tracking number and a name for the package. Also a carrier is needed, by default is UPS but this can be changed in the settings
+ TAB 2-Displays added packages: 
+  Displays current added packages labeling them with their tracking number and name.
+  Pressing a package will show a dialog with a couple of options:
+  	   -Show Complete information: Displays more information about the package such as (Location, carrier, status, estimated delivery and Owner (by default a package has no Owner)
+       -Remove this package: Removes currently selected package 
+       -Add to calendar: Add an estimated delivery date to the calendar
+       -Set an owner using contacts book: You can pick someone from your contacts book and set it as owner of this package
+       -Cancel 
+-Options button: When pressed it will show a preference activity. In this preference activity you can make some changes such as:
+	  -Change your profile: Here you can store information about yourself and it will be stored as long as the app is installed
+	  -Carrier: You can change the default carrier which is UPS
+      -Background Color: You can change the background color
+      -Clear packages list: Will clear the packages list
+      -Turn on Bluetooth: Turns on the Bluetooth
+      
+*The app will load the packages from the database everytime it starts up 
+*everytime a package is added, removed or edited it will be refelected in the database
+*and will save the preferences set on the preference activity 
+
+Tested on and Galaxy S4
+7 Textviews to show information about a package(tracking number, location, status, owner, name, carrier and estimated delivery date)
+1 Textview for the title
+**************************************************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/packgeInformationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/packgeInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/packageinfotv"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/packageInfoSize" />
+
+    <TextView
+        android:id="@+id/trackingtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/packgeInfoTitle"
+        android:layout_marginTop="20dp"
+        android:text="@string/trackingtv1"
+        android:textSize="@dimen/packageInfoSize" />
+
+    <TextView
+        android:id="@+id/statustv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/carriertv1"
+        android:text="@string/statustv1"
+        android:textSize="@dimen/packageInfoSize" />
+
+    <TextView
+        android:id="@+id/estimatedtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/statustv1"
+        android:text="@string/estimatedtv1"
+        android:textSize="@dimen/packageInfoSize" />
+
+    <TextView
+        android:id="@+id/nametv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/trackingtv1"
+        android:text="@string/nametv"
+        android:textSize="@dimen/packageInfoSize" />
+
+    <TextView
+        android:id="@+id/locationtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nametv1"
+        android:text="@string/locationtv1"
+        android:textSize="@dimen/packageInfoSize" />
+
+    <TextView
+        android:id="@+id/carriertv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/locationtv1"
+        android:text="@string/carriertv1"
+        android:textSize="@dimen/packageInfoSize" />
+
+    <TextView
+        android:id="@+id/ownertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/estimatedtv1"
+        android:text="@string/ownertv"
+        android:textSize="@dimen/packageInfoSize" />
+
+</RelativeLayout>

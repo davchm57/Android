@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab03
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 11/06/13
+* Date completed: 11/04/13
+*************************************
+This app have a list view that lets you choose different things to do
+2 Classes which function is to open a browser and to go a website
+2 Classes with large images
+1 Class which function is to play music 
+1 Class with a gallery
+This activity have a Gallery and an imageview
+*************************************!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical" >
+        
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+     <ImageView
+        android:id="@+id/cities"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/listImage"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        />
+
+</RelativeLayout>

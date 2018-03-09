@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 7
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/11/13
+Date completed: 11/11/13
+*************************************
+This app lets the user choose a date for a reservation using datepicker
+uses table layout to organize the content
+
+Added a couple of strings to display information
+*************************************!-->
+<resources>
+
+    <string name="app_name">Vacation Booker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="brazil">Rio de janeiro, Brazil</string>
+    <string name="vacations">Book the best vacations you will ever have!</string>
+    <string name="info">Rio de Janeiro, commonly referred to simply as Rio, is the capital city of the State of Rio de Janeiro, the second largest city of Brazil, and the third largest metropolitan area and agglomeration in South America, boasting approximately 6.3 million people within the city proper.</string>
+    <string name="des">Image</string>
+</resources>

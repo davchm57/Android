@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 8
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/18/13
+Date completed: 11/18/13
+*************************************
+This app shows uses tabs to show the different ways of transportation when traveling
+Each tab displays an Image and title using a Textview 
+Textview to display an image of a Plane and a title
+*************************************!-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/planeTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plane"
+        android:gravity="top|center_horizontal"
+        android:text="@string/Plane"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/Title" />
+
+</LinearLayout>

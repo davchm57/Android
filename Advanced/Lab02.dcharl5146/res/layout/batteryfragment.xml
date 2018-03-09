@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+Programmer: David Charles
+Class ID: dchar5146
+Lab 02
+CIS 4700
+Spring 2014
+Due date: 2/10/14
+Date completed: 2/09/14
+*************************************
+Battery checker app 
+Features:
+TAB 1-Displays battery level
+TAB 2-Displays System information
+-Notification Service: Let the user to set a minimum battery level, when the battery get to this level a notification will be fired up
+-When the notification is clicked it will open up an activity that will show an image shaking (an animation). It will also display the battery level. The notification will make the phone vibrate or making a sound depending on the phone state and it will make the led of the phone go blue.
+-This app will save the settings using sharedpreferences. When the phone is rebooted it will load those settings using a bootbroadcast. So if the notification service was on before the phone rebooted it will continue to be on after rebooting.
+-Installs a widget that displays the battery level
+	-When clicked it will open up the app
+	-It will tell the user if the service is running or not (the app will communicate with the widget) 
+This app is designed for large screens as well
+Tested on Nexus 7 and Galaxy S4
+The normal layout is the only one commented (since the other layouts are the same but with larger widgets/images)
+
+In this layout there are 2 textviews a toggle button and a progressbar
+batteryLevelTv=battery level
+NotificationTitle=text where it says "set notificaiton"
+alertBtn=button to turn on/off the notification service
+progressbar=progress bar showing the battery level
+*************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+
+
+    <ToggleButton
+        android:id="@+id/alertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/toggleb" />
+
+ <ProgressBar
+     android:id="@+id/progressbar"
+     style="?android:attr/progressBarStyleHorizontal"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:minWidth="200dp"
+      android:minHeight="100dp"
+     android:progressDrawable="@drawable/customprogressbar" />
+
+ <TextView
+     android:id="@+id/batteryLevelTv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/progressbar"
+     android:layout_centerHorizontal="true"
+     android:layout_marginBottom="36dp"
+     android:text="@string/batteryLevelTv"
+     android:textSize="@dimen/batteryLevelTvSize" />
+
+ <TextView
+     android:id="@+id/notificationBatteryText"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/alertBtn"
+     android:layout_centerHorizontal="true"
+     android:text="@string/setNotification" />
+
+</RelativeLayout>

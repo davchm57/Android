@@ -1,0 +1,52 @@
+<resources>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl5146
+Lab #04
+CIS 4700
+Spring 2014
+Due date: 4/21/14
+Date completed: 4/19/14
+
+This app has the following features:
+Tab 1: Music
+Shaking your phone will play an animation and music
+Shake it again it will stop the animation and music
+Tab 2: Selfie
+Like the name says, you can take a selfie in this tab.
+You can save a taken picture or discard it
+Share it via gmail, Bluetooth, ETC
+You can put effects on the picture clicking on the menu button right upper corner
+You can also send set an option that will send a text to a number every time you save a picture to your phone saying how awesome the app is.
+Tested on Samsung galaxy S4.
+added a Style for the font
+-->
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MenuFont">
+	<item name="android:textSize">25sp</item>
+	<item name="android:textColor">#A4C739</item>
+	<item name="android:textStyle">bold</item>
+	<item name="android:clickable">true</item>
+	<item name="android:layout_weight">1</item>
+	<item name="android:gravity">right|center</item>
+	<item name="android:layout_width">fill_parent</item>
+	<item name="android:layout_height">wrap_content</item>
+</style>
+</resources>

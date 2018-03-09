@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab02
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 10/16/13
+* Date completed: 10/13/13
+*************************************
+*This app will let the user choose among 4 items (smart phones). 
+*Each smartphone have a price
+*User will have to input a quantity
+*The output will be the price of the smart phone selected by the quantity
+*This will be outputed in a textview 
+*There is 1 RadioGroup that contains 4 Radio Buttons "c1, c2, c3, c4"
+*There is 1 basic button "buyB" 
+*There is 1 imageview 
+*There is 2 textviews one for the title and another one for the output
+*There is 1 editText that will grab the input from the user
+*************************************!-->
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buyB"
+        android:layout_alignLeft="@+id/inputText"
+        android:layout_marginBottom="10dp" >
+
+        <RadioButton
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/s4" />
+
+        <RadioButton
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g2" />
+
+        <RadioButton
+            android:id="@+id/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hone" />
+
+        <RadioButton
+            android:id="@+id/c4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buyB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/output"
+        android:layout_centerHorizontal="true"
+        android:text="@string/buyText" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/resultText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green"
+        android:textSize="@dimen/titled" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputText"
+        android:layout_alignLeft="@+id/inputText"
+        android:contentDescription="@string/smartphones"
+        android:src="@drawable/smartphones" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/output"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/title"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/titled" />
+
+</RelativeLayout>

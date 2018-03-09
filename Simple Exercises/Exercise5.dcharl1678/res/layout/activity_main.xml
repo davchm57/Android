@@ -1,0 +1,45 @@
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 5
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 10/20/13
+Date completed: 10/21/13
+*************************************
+This app use a list view that lets you choose between 4 websites, facebook's, twitter's, tumblr's and pinteret's
+So when you click on one of the options it will take you to its respective website
+There is an imageview which will display ic_launcher_social
+There is a textView "website" which will contain the website's name
+*************************************!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    
+    <ImageView 
+        android:id="@+id/ic_launcher_social" 
+        android:layout_width="50px"
+        android:layout_height="50px" 
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="2px"
+        android:src="@drawable/ic_launcher_social">
+        </ImageView>
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_launcher_social"
+        android:layout_alignTop="@+id/ic_launcher_social"
+        android:layout_toRightOf="@+id/ic_launcher_social"
+        android:text="@string/label" />
+
+</RelativeLayout>

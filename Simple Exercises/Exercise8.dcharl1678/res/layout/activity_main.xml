@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 8
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/18/13
+Date completed: 11/18/13
+*************************************
+This app shows uses tabs to show the different ways of transportation when traveling
+Each tab displays an Image and title using a Textview 
+
+There is a tabwidget and a frame 
+tabwidget to display the tabs
+the frame is to display the content of each tab
+*************************************!-->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+		<TabWidget
+		    android:id="@android:id/tabs" 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<FrameLayout
+		    android:id="@android:id/tabcontent"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"/>
+	</LinearLayout>
+</TabHost>

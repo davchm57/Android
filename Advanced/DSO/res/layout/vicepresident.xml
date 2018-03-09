@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="VicePresident"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vicepresidentradiog"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/vicepresident2" />
+
+    <RadioGroup
+        android:id="@+id/vicepresidentradiog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView1" >
+
+        <RadioButton
+            android:id="@+id/vicepresidentradio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="116dp"
+            android:text="@string/vicepresident1" />
+
+        <RadioButton
+            android:id="@+id/vicepresidentradio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:text="@string/vicepresident2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnvicepresidentback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnvicepresidentnext"
+        android:layout_alignBottom="@+id/btnvicepresidentnext"
+        android:layout_toRightOf="@+id/imageView1"
+        style="@style/btnStyleBeige"
+        android:text="Back" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/vicepresidentradiog"
+        android:layout_toLeftOf="@+id/vicepresidentradiog"
+        android:src="@drawable/vicepresident1" />
+
+    <Button
+        android:id="@+id/btnvicepresidentnext"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="60dp"
+        android:text="Next" />
+
+</RelativeLayout>

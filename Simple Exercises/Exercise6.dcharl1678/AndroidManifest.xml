@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 6
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 10/28/13
+Date completed: 10/28/13
+*************************************
+This App displays a gallery with different great cities images. When you click on one image it shows
+a toast saying which city did you click and it shows a bigger picture of the image below 
+Changed the launcher icon from ic_launcher to ic_launcher_city
+*************************************!-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.exercise6.dcharl1678"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_city"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.wmich.exercise6.dcharl1678.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

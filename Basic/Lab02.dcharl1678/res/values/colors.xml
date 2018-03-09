@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab02
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 10/16/13
+* Date completed: 10/13/13
+*************************************
+added 2 colors blue and green
+*************************************!-->
+<resources>
+    <color name="blue">#0000FF</color>
+    <color name="green">#003300</color>
+    
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ <ProgressBar
+     android:id="@+id/progressbar"
+     style="?android:attr/progressBarStyleHorizontal"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:minWidth="400dp"
+      android:minHeight="200dp"
+     android:progressDrawable="@drawable/customprogressbar" />
+
+ <TextView
+     android:id="@+id/batteryLevelTv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/progressbar"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentRight="true"
+     android:layout_marginBottom="36dp"
+     android:gravity="center_horizontal"
+     android:text="@string/batteryLevelTv"
+     android:textSize="@dimen/batteryLevelTvSizeLarge" />
+
+ <TextView
+     android:id="@+id/notificationBatteryText"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/progressbar"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="57dp"
+     android:text="@string/setNotification"
+     android:textSize="@dimen/batteryLevelTvSize" />
+
+ <ToggleButton
+     android:id="@+id/alertBtn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/notificationBatteryText"
+     android:layout_alignRight="@+id/notificationBatteryText"
+     android:layout_below="@+id/notificationBatteryText"
+     android:layout_marginTop="27dp"
+     android:text="@string/toggleb" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab03
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 11/06/13
+* Date completed: 11/04/13
+*************************************
+This app have a list view that lets you choose different things to do
+2 Classes which function is to open a browser and to go a website
+2 Classes with large images
+1 Class which function is to play music 
+1 Class with a gallery
+
+In this activity there is 2 players that plays 2 songs and 2 pictures showing 
+something about the songs played, dancing people (merengue) or the way the dress(mariachi)
+Button p1 and p2 to play the songs
+Button s1 and s2 to pause the player
+Textview mart and mert which shows the titles of each type of song being played (merengue and mariachi)
+Imageview meri and mari which shows a picture of each 
+textview state which shows the state of players, if its playing merengue,mariachi "- - -" if is not playing anything
+*************************************!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/s1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/p1"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/p1"
+        android:background="@color/red"
+        android:text="@string/stop"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/p2"
+        android:layout_alignLeft="@+id/s1"
+         android:layout_marginTop="0dp"
+        android:background="@color/red"
+        android:text="@string/stop"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/meri"
+        android:background="@color/blue"
+        android:text="@string/play"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mari"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/s1"
+        android:background="@color/blue"
+        android:text="@string/play"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/mart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mert"
+        android:layout_below="@+id/s1"
+        android:layout_marginTop="80dp"
+        android:text="@string/mar"
+        android:textStyle="bold"
+        android:textSize="@dimen/d1" />
+
+    <TextView
+        android:id="@+id/mert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/mer"
+        android:textStyle="bold"
+        android:textSize="@dimen/d1" />
+
+    <ImageView
+        android:id="@+id/meri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mert"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/listImage"
+        android:src="@drawable/merengue" />
+
+    <ImageView
+        android:id="@+id/mari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/meri"
+        android:layout_below="@+id/mart"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/listImage"
+        android:src="@drawable/mariachi" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/state"
+        android:textSize="@dimen/pla" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Battery Drain Pro</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+	<string name="wifi">Wi-Fi</string>
+	<string name="cpu">Cpu Usage</string>
+	<string name="camera">Flash Led</string>
+	<string name="vibrate">Vibrations</string>
+	<string name="bluetooth">Bluetooth</string>
+	<string name="brightness">Max Bright</string>
+	
+	<string name="blank">---</string>
+	
+	<string name="Start">Start</string>
+	
+	<string name="Stop">Stop</string>
+</resources>

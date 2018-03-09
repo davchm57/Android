@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #04
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/26/13
+Date completed: 11/25/13
+*************************************
+BookItCheap is a travel agency 
+We guarantee the best prices!
+Book your trips safe and easy with this app
+It has 6 classes
+MainActivity
+Tab1:Displays an image as a background and talks about BookItCheap
+Tab2:Lets the user choose a destination among 6 and a from and to Date
+Tab3:Shows a Gridview Image Gallery with the destinations pictures
+Tab4:Goes to a website that talks about these destinations 
+Tab5:Lets the user enter a location and a destination to book a flight
+
+Contains a liner layout
+TableLayout
+TableRow
+	Textview selectDest display an information to the user 
+TableRow
+	RadiouGroup destinationsGroup so the user can select among 6 destinations
+TableRow 
+	linearlayout
+		2 Buttons from and to dates so the user can select 2 dates
+TableRow 
+	book triggers the action to show the results
+TableRow
+	txtReservation
+	Shows the actual booking results
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Blue"
+    android:orientation="vertical" >
+
+	<TableLayout 
+	    android:id="@+id/title"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TableRow 
+		android:layout_weight="1"
+	    android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+		    android:id="@+id/selectDest"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:text="@string/select"
+		    android:textColor="@color/Black"
+		    android:textSize="@dimen/destinationTitle" />
+
+	 	</TableRow>
+	 	<TableRow
+			android:layout_weight="1"
+			android:orientation="horizontal"
+			 	>
+
+			<RadioGroup
+			    android:id="@+id/destinationsGroup"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp" 
+			    android:layout_marginLeft="100dp"
+			   >
+		
+			    <RadioButton
+			        android:id="@+id/newYork"
+			        android:layout_width="wrap_content"
+			        android:layout_height="35dp"
+			        android:checked="true"
+			        android:text="@string/newYork" 
+			         android:textColor="@color/Black"/>
+		
+			    <RadioButton
+			        android:id="@+id/paris"
+			        android:layout_width="wrap_content"
+			        android:layout_height="35dp"
+			        android:text="@string/paris" 
+			         android:textColor="@color/Black"/>
+		
+			    <RadioButton
+			        android:id="@+id/barcelona"
+			        android:layout_width="wrap_content"
+			        android:layout_height="35dp"
+			        android:text="@string/barcelona" 
+			         android:textColor="@color/Black"/>
+		
+			    <RadioButton
+			        android:id="@+id/london"
+			        android:layout_width="wrap_content"
+			        android:layout_height="35dp"
+			        android:text="@string/london"
+			         android:textColor="@color/Black" />
+		
+			    <RadioButton
+			        android:id="@+id/sanFrancisco"
+			        android:layout_width="wrap_content"
+			        android:layout_height="35dp"
+			        android:text="@string/sanFrancisco"
+			         android:textColor="@color/Black" />
+		
+			    <RadioButton
+			        android:id="@+id/sydney"
+			        android:layout_width="wrap_content"
+			        android:layout_height="35dp"
+			        android:text="@string/sydney"
+			         android:textColor="@color/Black" />
+			</RadioGroup>
+		</TableRow>
+		<TableRow>
+		    <LinearLayout
+		        android:id="@+id/linearLayout1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:orientation="horizontal" >
+
+		        <Button
+		            android:id="@+id/btnDateFrom"
+		            android:layout_width="156dp"
+		            android:layout_height="wrap_content"
+		            android:text="@string/checkIn" >
+
+		        </Button>
+
+		        <Button
+		            android:id="@+id/btnDateTo"
+		            android:layout_width="158dp"
+		            android:layout_height="wrap_content"
+		            android:text="@string/checkOut" />
+
+		    </LinearLayout>
+
+		</TableRow>
+		<TableRow
+		android:layout_weight="1"
+	    android:gravity="center"
+		android:orientation="horizontal">
+		    <Button
+		        android:id="@+id/book"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/book" />
+		</TableRow>
+		<TableRow
+		android:layout_weight="1"
+	    android:gravity="center"
+		android:orientation="horizontal">
+
+		      <TextView
+		          android:id="@+id/txtReservation"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:gravity="center_horizontal"
+		          android:text="@string/output"
+		          android:textColor="@color/Orange" />
+
+		 </TableRow>
+	</TableLayout>
+</LinearLayout>

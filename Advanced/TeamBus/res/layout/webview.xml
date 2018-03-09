@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+Programmer: TeamBus
+Final Project
+CIS 4700: Mobile Commerce Development
+Spring 2014
+Due date: 04/21/14
+Date completed: 04/21/14
+*************************************
+* This file loads webview from 'WebActivity.java' file.
+* When users touch 'owl' icon from the bus stop list, the screen will show
+  Kalamazoo Metro Transit web site and it will display
+  bus schedule for a selected bus stop.
+*************************************
+-->
+
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/webView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+</WebView>

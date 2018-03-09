@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #04
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/26/13
+Date completed: 11/25/13
+*************************************
+BookItCheap is a travel agency 
+We guarantee the best prices!
+Book your trips safe and easy with this app
+It has 6 classes
+MainActivity
+Tab1:Displays an image as a background and talks about BookItCheap
+Tab2:Lets the user choose a destination among 6 and a from and to Date
+Tab3:Shows a Gridview Image Gallery with the destinations pictures
+Tab4:Goes to a website that talks about these destinations 
+Tab5:Lets the user entere a location and a destination to book a flight
+Added Many string resources
+-->
+<resources>
+
+    <string name="app_name">BookItCheap</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="paris">Paris</string>
+	<string name="barcelona">Barcelona</string>
+	<string name="london">London</string>
+	<string name="newYork">New York</string>
+	<string name="sanFrancisco">San Francisco</string>
+	<string name="sydney">Sydney</string>
+	<string name="book">Book it!</string>
+	<string name="select">Select a Destination</string>
+	<string name="checkIn">Check in date</string>
+	<string name="checkOut">Check out date</string>
+	<string name="output">--</string>
+	<string name="bookingAgent">BookItCheap got the best prices!</string>
+	<string name="flightTitle">Book a Flight</string>
+	<string name="from">From</string>
+	<string name="to">To</string>
+	<string name="dateFlight">Select a Date</string>
+	<string name="bookFlight">Book this flight</string>
+	<string name="bookFlightButton">Book it</string>
+	<string name="fromText"></string>
+	<string name="toText"></string>
+	<string name="resultFlight">--</string>
+	<string name="hintFrom">Enter a city or airport code</string>
+	<string name="hintTo">Enter a city or airport code</string>
+	<string name="tab1Title"></string>
+	<string name="tab1">BookItCheap offers the cheapest prices to book your trip.\n\nDon\'t waste time and take that trip to Paris you have always wanted.\n\nOur current destinations are:\n\n-New York\n-Paris\n-Barcelona\n-London\n-San Francisco\n-Sydney
+</string>
+	
+</resources>

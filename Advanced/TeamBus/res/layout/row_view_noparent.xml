@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <!--
+Programmer: TeamBus
+Final Project
+CIS 4700: Mobile Commerce Development
+Spring 2014
+Due date: 04/21/14
+Date completed: 04/21/14
+*************************************
+* This layout refers to the icon (heart or star) everytime it gets clicked it will override the parent layout
+*************************************
+-->
+    
+    
+  <TextView
+    android:id="@+id/text"
+    android:layout_width="0dip"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+  
+  <edu.wmich.teambus.NoParentPressImageView
+    android:id="@+id/right"
+    android:layout_width="?android:attr/listPreferredItemHeight"
+    android:layout_height="fill_parent"
+    android:src="@drawable/ic_launcher"
+    android:scaleType="center"
+    android:clickable="true"
+     />
+  
+</LinearLayout>
+

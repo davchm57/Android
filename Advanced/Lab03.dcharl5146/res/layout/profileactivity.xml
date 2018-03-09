@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*************************************
+ * Programmer: David Charles
+ * Class ID: dchar5146
+ * Lab 03
+ * CIS 4700
+ * Spring 2014
+ * Due date: 3/28/14
+ * Date completed: 3/25/14
+ *************************************
+ Package Tracker app
+ Features:
+ TAB 1-Lets you add a package:
+	-You can add a package entering a tracking number and a name for the package. Also a carrier is needed, by default is UPS but this can be changed in the settings
+ TAB 2-Displays added packages: 
+  Displays current added packages labeling them with their tracking number and name.
+  Pressing a package will show a dialog with a couple of options:
+  	   -Show Complete information: Displays more information about the package such as (Location, carrier, status, estimated delivery and Owner (by default a package has no Owner)
+       -Remove this package: Removes currently selected package 
+       -Add to calendar: Add an estimated delivery date to the calendar
+       -Set an owner using contacts book: You can pick someone from your contacts book and set it as owner of this package
+       -Cancel 
+-Options button: When pressed it will show a preference activity. In this preference activity you can make some changes such as:
+	  -Change your profile: Here you can store information about yourself and it will be stored as long as the app is installed
+	  -Carrier: You can change the default carrier which is UPS
+      -Background Color: You can change the background color
+      -Clear packages list: Will clear the packages list
+      -Turn on Bluetooth: Turns on the Bluetooth
+      
+*The app will load the packages from the database everytime it starts up 
+*everytime a package is added, removed or edited it will be refelected in the database
+*and will save the preferences set on the preference activity 
+
+Tested on and Galaxy S4
+
+4 edittexts to get the information about the user (name, city, state and zip code)
+4 textviews to label these
+1 textview for the title
+1 button to save the profile
+**************************************************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/trackAPackageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:text="@string/profilenametv"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/profilecitytv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/trackAPackageTitle"
+        android:layout_marginTop="57dp"
+        android:text="@string/profilecitytv"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/profilestatetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/profilecitytv"
+        android:layout_marginTop="62dp"
+        android:text="@string/profilestatetv"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/saveprofilebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        style="@style/btnStyleBeige"
+        android:text="@string/profilebutton" />
+
+    <TextView
+        android:id="@+id/profilezipcodetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/profilestatetv"
+        android:layout_marginTop="54dp"
+        android:text="@string/profilezipcodetv"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/profiletitletv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/profiletitletv"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/profilenameed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saveprofilebtn"
+        android:layout_alignTop="@+id/trackAPackageTitle"
+        android:ems="10"
+        android:hint="@string/profilenameed"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/profilecityed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profilenameed"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/profilecitytv"
+        android:ems="10"
+        android:hint="@string/profilecityed"
+         />
+
+    <EditText
+        android:id="@+id/profilestateed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profilecityed"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/profilestatetv"
+        android:ems="10"
+        android:hint="@string/profilestateed" />
+
+    <EditText
+        android:id="@+id/profilezipcodeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profilezipcodetv"
+        android:layout_alignBottom="@+id/profilezipcodetv"
+        android:layout_alignLeft="@+id/profilestateed"
+        android:ems="10"
+        android:hint="@string/profilezipcodeed" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab01: Android vs iOS
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 9/25/13
+Date completed: 9/24/13
+*************************************
+Created 2 textviews "iosTittleTextview" and iosInfoTextview"
+iosTittleTextview displays the title
+iosInfoTextview displays the information of iOS
+Created a back button "iosBackButton"
+Clicking the iosBackButton will make the app go back to the main screen
+Created an image view "iosImageView" that displays an image of the logo of apple
+*************************************!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+	
+    <ImageView
+        android:id="@+id/iosImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/iosImageContent"
+        android:src="@drawable/appleimage" />
+
+    <TextView
+        android:id="@+id/iosTitleTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iosImageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/IosTv"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleD" />
+
+    <Button
+        android:id="@+id/iosBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iosInfoTextview"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/iosBackButtonContent"
+        android:text="@string/iosBackButtonText"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/iosInfoTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iosTitleTextview"
+        android:text="@string/iosInfoText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/iosTextSize" />
+
+</RelativeLayout>

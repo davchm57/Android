@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab01: Android vs iOS
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 9/25/13
+Date completed: 9/24/13
+*************************************
+Created 3 textviews
+iosTitleTextview displays a title that says Android?
+androidTitleTextview displays a title the says iOS?
+mainTextView displays "Android vs iOS"
+Created 2 imageButtons
+appleLogoButton displays an image of the logo of apple and when clicked it will show ios.xml
+androidLogoButton displays an image of an android and it when clicked will show android.xml
+1 image view iosImageView displays a funny image of android and the apple of the apple logo Fighting
+Created 1 digital clock that display the time
+*************************************!-->					
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/iosTitleTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/androidVsIos"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mainTitle" />
+
+    <TextView
+        android:id="@+id/androidTitleTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/appleLogoButton"
+        android:layout_below="@+id/iosImageView"
+        android:layout_marginRight="38dp"
+        android:text="@string/iosMainScreen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/iosMainScreenSize" />
+
+    <ImageView
+        android:id="@+id/iosImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iosTitleTextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:contentDescription="@string/mainImageContent"
+        android:src="@drawable/mainimage" />
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/androidTitleTextview"
+        android:layout_alignBottom="@+id/androidTitleTextview"
+        android:layout_alignRight="@+id/iosImageView"
+        android:layout_marginRight="17dp"
+        android:text="@string/androidMainScreen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/androidMainScreenSize" />
+
+    <ImageButton
+        android:id="@+id/androidLogoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/iosImageView"
+        android:layout_below="@+id/mainTextView"
+        android:contentDescription="@string/androidLogoButton"
+        android:src="@drawable/androidlogo" />
+
+    <ImageButton
+        android:id="@+id/appleLogoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iosImageView"
+        android:layout_alignTop="@+id/androidLogoButton"
+        android:contentDescription="@string/appleLogoButtonContent"
+        android:src="@drawable/applelogo" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iosTitleTextview"
+        android:layout_centerHorizontal="true"
+        android:text="@+id/digital" />
+
+</RelativeLayout>

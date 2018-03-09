@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DSO</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="activitiesdirector1">Stephanie Gutierrez</string>
+    <string name="activitiesdirector2">Fadul Perez</string>
+    <string name="membershipdirector1">Claudy Mejia</string>
+    <string name="membershipdirector2">Nelson Lora</string>
+    <string name="president1">Antonio Giraldi</string>
+    <string name="president2">Amaury Pineda</string>
+    <string name="secretary1">Edmundo Messina</string>
+    <string name="secretary2">Lorena Jimenez</string>
+    <string name="vicepresident1">Alejandro Carrasco</string>
+    <string name="vicepresident2">Ariel Castillo</string>
+    <string name="vocal1">Carlos Soto</string>
+    <string name="vocal2">Jose Amado</string>
+    <string name="treasurer1">Moises Frias</string>
+    <string name="treasurer2">Camila Ramirez</string>
+	
+     <string name="memberid">Enter member Id</string>
+      <string name="membername">Enter member Name</string>
+</resources>

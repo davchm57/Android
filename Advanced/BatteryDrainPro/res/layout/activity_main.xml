@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+    
+    <CheckBox
+        android:id="@+id/bright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vibrations"
+        android:layout_alignParentLeft="true"
+        android:text="@string/brightness" />
+
+    <CheckBox
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bright"
+        android:layout_alignBottom="@+id/bright"
+        android:layout_alignLeft="@+id/led"
+        android:text="@string/wifi" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cpu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/cpu"
+        android:text="@string/Start" />
+
+    <CheckBox
+        android:id="@+id/cpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startBtn"
+        android:layout_alignLeft="@+id/vibrations"
+        android:text="@string/cpu" />
+
+    <CheckBox
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/led"
+        android:layout_alignTop="@+id/cpu"
+        android:text="@string/bluetooth" />
+
+    <CheckBox
+        android:id="@+id/vibrations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cpu"
+        android:layout_alignLeft="@+id/bright"
+        android:text="@string/vibrate" />
+
+    <CheckBox
+        android:id="@+id/led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressbar"
+        android:layout_below="@+id/wifi"
+        android:text="@string/camera" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startBtn"
+        android:layout_alignBottom="@+id/startBtn"
+        android:layout_alignLeft="@+id/blue"
+        android:layout_alignRight="@+id/blue"
+        android:text="@string/Stop" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bright"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:minHeight="100dp"
+        android:minWidth="200dp"
+        android:progressDrawable="@drawable/customprogressbar" />
+
+    <TextView
+        android:id="@+id/batteryHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batteryLevelTv"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="@dimen/batteryLevelTvSize" />
+
+    <TextView
+        android:id="@+id/batteryLevelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_horizontal"
+        android:text="@string/blank"
+        android:textSize="@dimen/batteryLevelTvSize" />
+
+</RelativeLayout>

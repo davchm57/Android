@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 6
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 10/28/13
+Date completed: 10/28/13
+*************************************
+This App displays a gallery with different great cities images. When you click on one image it shows
+a toast saying which city did you click and it shows a bigger picture of the image below 
+*************************************!-->
+<resources>
+    <color name="black">#000000</color>
+    
+</resources>

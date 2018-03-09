@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab03
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 11/06/13
+* Date completed: 11/04/13
+*************************************
+This app have a list view that lets you choose different things to do
+2 Classes which function is to open a browser and to go a website
+2 Classes with large images
+1 Class which function is to play music 
+1 Class with a gallery
+
+added a couple of strings such as play and stop for the players, changed the app name string
+*************************************!-->
+<resources>
+
+    <string name="app_name">Travel Guide</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="splashText">Travel Guide</string>
+    <string name="play">Play</string>
+    <string name="stop">stop</string>
+    <string name="mer">Merengue</string>
+    <string name="mar">Mariachi</string>
+    <string name="state">---</string>
+    <string name="listImage">Image of the list</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dchar5146
+Lab 01
+CIS 4700
+Spring 2014
+Due date: 2/12/14
+Date completed: 2/11/14
+*************************************
+Simple wmu app
+Features:
+Marks on a map:
+Current location with address and coordinates
+WMU Location
+Proximity Alert:
+This app lets you set a proximity alert to the following places:
+Schenaider hall
+Waldo library
+The recreation center
+The Bernhard center
+If you click the main icon it will show a picture of wmu using a fragment
+*************************************
+Added permisions
+google api key
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.lab01.dcharl1546"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+     <uses-feature
+		android:glEsVersion="0x00020000"
+		android:required="true"/>
+     
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+   
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+<!-- The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended. -->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> 
+<uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity
+            android:name="edu.wmich.lab01.dcharl1546.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="edu.wmich.lab01.dcharl1546.MyLocation"></activity>
+        <activity android:name="edu.wmich.lab01.dcharl1546.ListFragment"></activity>
+        <activity android:name="edu.wmich.lab01.dcharl1546.ProxAlertActivity"
+         android:launchMode="singleTop">
+        </activity>
+        <receiver android:name=".ProximityIntentReceiver">
+        </receiver>
+        <meta-data
+		android:name="com.google.android.maps.v2.API_KEY"
+		android:value="AIzaSyC8VPmh4ZxsNdaMDU9yCPKO1f1pCfYlyBo" />
+        <meta-data
+	    android:name="com.google.android.gms.version"
+	    android:value="@integer/google_play_services_version" />
+      
+    </application>
+
+</manifest>

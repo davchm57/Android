@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dchar5146
+Lab 01
+CIS 4700
+Spring 2014
+Due date: 2/12/14
+Date completed: 2/11/14
+*************************************
+Simple wmu app
+Features:
+Marks on a map:
+Current location with address and coordinates
+WMU Location
+Proximity Alert:
+This app lets you set a proximity alert to the following places:
+Schenaider hall
+Waldo library
+The recreation center
+The Bernhard center
+If you click the main icon it will show a picture of wmu using a fragment
+*************************************
+-->
+
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">WMU App</string>
+ 
+    <string name="proximityAlert">Set proximity Alert</string>
+	<string name="ProximityA"></string>
+	<string name="fragment1">Fragment 1</string>
+	<string name="fragment2">Fragment 2</string>
+	<string name="MyLocation">My location</string>
+	<string name="ProximityAlert">Proximity Alert</string>
+	<string name="ListImage">List Image</string>
+</resources>
+

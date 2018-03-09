@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 6
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 10/28/13
+Date completed: 10/28/13
+*************************************
+This App displays a gallery with different great cities images. When you click on one image it shows
+a toast saying which city did you click and it shows a bigger picture of the image below 
+added a couple of string resources and changed the app name to Great Cities
+*************************************!-->
+<resources>
+
+    <string name="app_name">Great Cities</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="city">des</string>
+    <string name="res">res</string>
+
+</resources>

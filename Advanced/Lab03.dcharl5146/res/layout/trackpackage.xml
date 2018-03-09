@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*************************************
+ * Programmer: David Charles
+ * Class ID: dchar5146
+ * Lab 03
+ * CIS 4700
+ * Spring 2014
+ * Due date: 3/28/14
+ * Date completed: 3/25/14
+ *************************************
+ Package Tracker app
+ Features:
+ TAB 1-Lets you add a package:
+	-You can add a package entering a tracking number and a name for the package. Also a carrier is needed, by default is UPS but this can be changed in the settings
+ TAB 2-Displays added packages: 
+  Displays current added packages labeling them with their tracking number and name.
+  Pressing a package will show a dialog with a couple of options:
+  	   -Show Complete information: Displays more information about the package such as (Location, carrier, status, estimated delivery and Owner (by default a package has no Owner)
+       -Remove this package: Removes currently selected package 
+       -Add to calendar: Add an estimated delivery date to the calendar
+       -Set an owner using contacts book: You can pick someone from your contacts book and set it as owner of this package
+       -Cancel 
+-Options button: When pressed it will show a preference activity. In this preference activity you can make some changes such as:
+	  -Change your profile: Here you can store information about yourself and it will be stored as long as the app is installed
+	  -Carrier: You can change the default carrier which is UPS
+      -Background Color: You can change the background color
+      -Clear packages list: Will clear the packages list
+      -Turn on Bluetooth: Turns on the Bluetooth
+      
+*The app will load the packages from the database everytime it starts up 
+*everytime a package is added, removed or edited it will be refelected in the database
+*and will save the preferences set on the preference activity 
+
+Tested on and Galaxy S4
+
+To track a package the user needs to input a valid tracking number, name and a carrier
+1 button(track a package) is used, 1 spinner(carrier), 2 edit texts(tracking number and name), 2 textivews one with the title
+and the other one to select a carrier
+
+**************************************************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carrierTv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/trackAPackageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/trackPackageTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/packageTr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/trackAPackageTitle"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="@string/trackpackagehint" />
+
+    <EditText
+        android:id="@+id/packageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/packageTr"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/packageTr"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/namehint" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/selectACarrier"
+        android:layout_marginTop="14dp"
+        android:entries="@array/carrier_arrays" />
+
+    <Button
+        android:id="@+id/trackPackageBtn"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/trackPackage" />
+
+    <TextView
+        android:id="@+id/selectACarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/packageName"
+        android:layout_marginTop="34dp"
+        android:text="@string/carrierTv"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab01: Android vs iOS
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 9/25/13
+Date completed: 9/24/13
+*************************************
+Created 2 textviews "androidTittleTextview" and androidInfoTextview"
+androidTittleTextview displays the title
+androidInfoTextview displays the information of Android
+Created a back button "androidBackButton"
+Clicking the androidBackButton will make the app go back to the main screen
+Created an image view "androidImageView" that displays an image of the logo of android
+*************************************!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+
+    <ImageView
+        android:id="@+id/iosImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/androidImageContent"
+        android:src="@drawable/androidimage" />
+
+    <TextView
+        android:id="@+id/androidTitleTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iosImageView"
+        android:layout_alignRight="@+id/iosImageView"
+        android:layout_below="@+id/iosImageView"
+        android:gravity="center"
+        android:text="@string/androidTextView"
+        android:textColor="@color/white"
+        android:textSize="@dimen/androidTitleD" />
+
+    <TextView
+        android:id="@+id/androidInfoTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/androidTitleTextview"
+        android:text="@string/androidInfoText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/androidTextSize" />
+
+    <Button
+        android:id="@+id/AndroidBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/androidInfoTextview"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/androidBackButtonContent"
+        android:text="@string/androidBackButtonText"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

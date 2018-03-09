@@ -1,0 +1,54 @@
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #04
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/26/13
+Date completed: 11/25/13
+*************************************
+BookItCheap is a travel agency 
+We guarantee the best prices!
+Book your trips safe and easy with this app
+It has 6 classes
+MainActivity
+Tab1:Displays an image as a background and talks about BookItCheap
+Tab2:Lets the user choose a destination among 6 and a from and to Date
+Tab3:Shows a Gridview Image Gallery with the destinations pictures
+Tab4:Goes to a website that talks about these destinations 
+Tab5:Lets the user entere a location and a destination to book a flight
+
+Added a custom style
+-->
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+  <style name="CustomTheme" parent="@android:style/Theme">
+    <item name="android:tabWidgetStyle">@style/CustomTabWidget</item>
+</style>
+<style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+    <item name="android:textAppearance">@style/CustomTabWidgetText</item>
+</style>
+<style name="CustomTabWidgetText" 
+    parent="@android:style/TextAppearance.Widget.TabWidget">
+    <item name="android:textSize">10sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/Blue</item>
+</style>
+</resources>

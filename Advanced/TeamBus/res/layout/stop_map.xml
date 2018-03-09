@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+        <!--
+Programmer: TeamBus
+Final Project
+CIS 4700: Mobile Commerce Development
+Spring 2014
+Due date: 04/21/14
+Date completed: 04/21/14
+*************************************
+* When users touch a specific stop name on the list,
+  google map pulls and show the location of clicked bus stop.
+*************************************
+-->
+    
+    <fragment 
+          android:id="@+id/mapTwo"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/>
+    
+
+</RelativeLayout>

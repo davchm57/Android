@@ -1,0 +1,20 @@
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab02
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 10/16/13
+* Date completed: 10/13/13
+*************************************
+added 2 dimensions one for the title and another one for the input and output
+*************************************!-->
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="titled">14sp</dimen>
+    <dimen name="rsize">10sp</dimen>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+	<product>     
+		<status>On Transit</status>
+		<estimated>2014-7-12</estimated>
+		<location>Toronto, Canada</location>
+	</product>
+</products>

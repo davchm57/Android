@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab01: Android vs iOS
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 9/25/13
+Date completed: 9/24/13
+*************************************
+added a bunch of string resources such as colors and names
+*************************************!-->
+<resources>
+
+    <string name="app_name">Lab01.dcharl1678</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="androidImageContent">androidD</string>
+    <string name="androidTextView">Android</string>
+    <string name="androidBackButton">Back</string>
+    <string name="androidBackButtonText">Back</string>
+    <string name="IosTv">iOS</string>
+    <color name="blue">#0066FF</color>
+      <color name="white">#FFFFFF</color>
+    <string name="androidVsIos">Android vs iOS</string>
+    <string name="androidLogoButton">androidLogoButtonContent</string>
+    <string name="appleLogoButtonContent">appleLogoButtton</string>
+    <string name="mainImageContent">Main Image</string>
+    <string name="iosBackButtonContent">iosBackButton</string>
+    <string name="androidBackButtonContent">Android Back Button</string>
+    <string name="iosBackButtonText">Back</string>
+    <string name="iosImageContent">IOS</string>
+     <string name="label">Android vs iOS</string>
+     <string name="androidInfoText">Android is an operating system based on Linux and made by Google to be used on Smartphones and Tablets. Android is to mobiles, what Windows is to computers. Android operating system was announced publicly by late 2007 and was officially launched on October 2008. - An estimated 52.3% of U.S. smartphone users rely on Android devices</string>
+     <string name="iosInfoText">iOS is Apple\'s mobile operating system for its iPhone, iPod touch, iPad, Apple TV and similar devices. iOS was originally called the iPhone OS but was renamed in 2010 to reflect the operating system’s evolving support for additional Apple devices. iOS phones only account for 37.8% of the overall market</string>
+	<string name="digital">Digital Clock</string>
+	<string name="iosMainScreen">iOS?</string>
+	<string name="androidMainScreen">Android?</string>
+</resources>

@@ -1,0 +1,42 @@
+<!-- 
+Programmer: David Charles
+Class ID: dcharl5146
+Lab #04
+CIS 4700
+Spring 2014
+Due date: 4/21/14
+Date completed: 4/19/14
+
+This app has the following features:
+Tab 1: Music
+Shaking your phone will play an animation and music
+Shake it again it will stop the animation and music
+Tab 2: Selfie
+Like the name says, you can take a selfie in this tab.
+You can save a taken picture or discard it
+Share it via gmail, Bluetooth, ETC
+You can put effects on the picture clicking on the menu button right upper corner
+You can also send set an option that will send a text to a number every time you save a picture to your phone saying how awesome the app is.
+Tested on Samsung galaxy S4.
+
+Preferences for effects and sms
+-->
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Settings" >
+        <Preference
+            android:key="effects"
+            android:summary="Choose an effect"
+            android:title="Effects" />
+        
+              <EditTextPreference
+            android:key="sms"
+            android:summary="You can set a number so everytime you save a picture, you will tell your friend how awesome this app is!"
+            android:dialogTitle="SMS preference"
+            android:title="Set sms number" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

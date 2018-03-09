@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+Programmer: David Charles
+Class ID: dchar5146
+Lab 02
+CIS 4700
+Spring 2014
+Due date: 2/10/14
+Date completed: 2/09/14
+*************************************
+Battery checker app 
+Features:
+TAB 1-Displays battery level
+TAB 2-Displays System information
+-Notification Service: Let the user to set a minimum battery level, when the battery get to this level a notification will be fired up
+-When the notification is clicked it will open up an activity that will show an image shaking (an animation). It will also display the battery level. The notification will make the phone vibrate or making a sound depending on the phone state and it will make the led of the phone go blue.
+-This app will save the settings using sharedpreferences. When the phone is rebooted it will load those settings using a bootbroadcast. So if the notification service was on before the phone rebooted it will continue to be on after rebooting.
+-Installs a widget that displays the battery level
+	-When clicked it will open up the app
+	-It will tell the user if the service is running or not (the app will communicate with the widget) 
+This app is designed for large screens as well
+Tested on Nexus 7 and Galaxy S4
+The normal layout is the only one commented (since the other layouts are the same but with larger widgets/images)
+Added 1 service notification service 
+1 receiver for the batterywidget
+1 receiver for the bootbroadcast
+permision to read the pgone state
+permision to receive on boot
+support for larger screen
+*************************************
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.lab02.dcharl5146"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+     <supports-screens
+   android:largeScreens="true"
+   android:normalScreens="true"
+   android:smallScreens="true"
+   android:anyDensity="true" />
+    
+  		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+		
+		
+    <application
+        
+     
+        android:allowBackup="true"
+        android:icon="@drawable/fullbar"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.wmich.lab02.dcharl5146.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <receiver android:name=".BatteryWidget" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				      <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+					   android:resource="@xml/widget_main" />
+        </receiver>
+        
+        
+		
+       <receiver android:name=".BootBroadcast">    
+    		<intent-filter >
+        		<action android:name="android.intent.action.BOOT_COMPLETED"/>                
+    		</intent-filter>
+		</receiver>
+        
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <activity android:name="edu.wmich.lab02.dcharl5146.NotificationIntent"></activity>
+        
+        
+    </application>
+
+</manifest>

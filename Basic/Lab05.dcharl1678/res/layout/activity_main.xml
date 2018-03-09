@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #05
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 12/11/13
+Date completed: 12/8/13
+*************************************
+This app have 3 tabs and it shows different animations
+Tab1 Frame by Frame
+Tab2 Tween
+Tab3 Alpha
+
+This layout uses a tabhost, a linear layout, a tabwidget and a framelayout
+TabWidget to display tabs
+FrameLayout displays the content in those tabs
+-->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+		<TabWidget
+		    android:id="@android:id/tabs" 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+		<FrameLayout
+		    android:id="@android:id/tabcontent"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"/>
+	</LinearLayout>
+</TabHost>
+

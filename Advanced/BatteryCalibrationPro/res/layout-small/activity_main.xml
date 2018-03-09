@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/batteryDrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/batteryDrain" />
+
+    <Button
+        android:id="@+id/calibrateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/batteryDrain"
+        android:text="@string/calibrate" />
+
+    <TextView
+        android:id="@+id/batteryLevelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/blank"
+        android:textSize="@dimen/small" />
+
+    <TextView
+        android:id="@+id/instructionsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batteryDrain"
+        android:layout_alignParentLeft="true"
+        android:text="@string/instructions"
+        android:textSize="@dimen/small" />
+
+    <TextView
+        android:id="@+id/batteryHealthTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batteryTemperature"
+        android:layout_alignLeft="@+id/batteryTemperature"
+        android:gravity="center_horizontal"
+        android:text="@string/blank"
+        android:textSize="@dimen/small" />
+
+    <TextView
+        android:id="@+id/batteryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batteryHealthTv"
+        android:layout_alignLeft="@+id/batteryLevelTv"
+        android:text="@string/blank"
+        android:textSize="@dimen/small" />
+
+    <TextView
+        android:id="@+id/batteryTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batteryLevelTv"
+        android:layout_alignLeft="@+id/batteryLevelTv"
+        android:gravity="center_horizontal"
+        android:text="@string/blank"
+        android:textSize="@dimen/small" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/instructionsTv"
+        android:layout_centerHorizontal="true"
+        android:minHeight="50dp"
+        android:minWidth="100dp"
+        android:progressDrawable="@drawable/customprogressbar" />
+
+</RelativeLayout>

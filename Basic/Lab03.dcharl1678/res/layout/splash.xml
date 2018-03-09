@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+* Programmer: David Charles
+* Class ID: dcharl1678
+* Lab03
+* CIS 2610: Business Mobile Programming
+* Fall 2013
+* Due date: 11/06/13
+* Date completed: 11/04/13
+*************************************
+This app have a list view that lets you choose different things to do
+2 Classes which function is to open a browser and to go a website
+2 Classes with large images
+1 Class which function is to play music 
+1 Class with a gallery
+
+Textview to show the title of the app and an Image
+*************************************!-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash"
+        android:gravity="center"
+        android:text="@string/splashText"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+		
+</LinearLayout>

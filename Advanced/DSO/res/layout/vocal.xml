@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Vocal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/vocalradiog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView2" >
+
+        <RadioButton
+            android:id="@+id/vocalradio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="116dp"
+            android:text="@string/vocal1" />
+
+        <RadioButton
+            android:id="@+id/vocalradio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:text="@string/vocal2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnvocalback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnvocalnext"
+        android:layout_alignBottom="@+id/btnvocalnext"
+        android:layout_alignLeft="@+id/vocalradiog"
+        style="@style/btnStyleBeige"
+        android:text="Back" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/vocalradiog"
+        android:src="@drawable/vocal1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vocalradiog"
+        android:layout_toLeftOf="@+id/vocalradiog"
+        android:src="@drawable/vocal2" />
+
+    <Button
+        android:id="@+id/btnvocalnext"
+        style="@style/btnStyleBeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/vocalradiog"
+        android:text="Next" />
+
+</RelativeLayout>

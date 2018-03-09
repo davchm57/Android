@@ -1,0 +1,19 @@
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 4
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 10/09/13
+Date completed: 10/06/13
+*************************************
+added the dimension for the tittle
+*************************************!-->
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="titleD">20sp</dimen>
+
+</resources>

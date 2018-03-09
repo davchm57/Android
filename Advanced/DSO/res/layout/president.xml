@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="President"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/presidentradiog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/imageView1" >
+
+        <RadioButton
+            android:id="@+id/presidentradiog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="116dp"
+            android:text="@string/president1" />
+
+        <RadioButton
+            android:id="@+id/presidentradiog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:text="@string/president2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnpresidentback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnpresidentnext"
+        android:layout_alignBottom="@+id/btnpresidentnext"
+        android:layout_toRightOf="@+id/imageView1"
+        style="@style/btnStyleBeige"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btnpresidentnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/textView1"
+        style="@style/btnStyleBeige"
+        android:text="Next" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/presidentradiog"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/president2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="84dp"
+        android:layout_toLeftOf="@+id/presidentradiog"
+        android:src="@drawable/president1" />
+
+</RelativeLayout>

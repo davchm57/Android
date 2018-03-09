@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #04
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/26/13
+Date completed: 11/25/13
+*************************************
+BookItCheap is a travel agency 
+We guarantee the best prices!
+Book your trips safe and easy with this app
+It has 6 classes
+MainActivity
+Tab1:Displays an image as a background and talks about BookItCheap
+Tab2:Lets the user choose a destination among 6 and a from and to Date
+Tab3:Shows a Gridview Image Gallery with the destinations pictures
+Tab4:Goes to a website that talks about these destinations 
+Tab5:Lets the user enter a location and a destination to book a flight
+This activity contains a Linear layout
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+</LinearLayout>

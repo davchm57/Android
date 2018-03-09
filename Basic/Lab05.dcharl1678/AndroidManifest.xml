@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #05
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 12/11/13
+Date completed: 12/8/13
+*************************************
+Changed icon name, theme and added 3 tabs
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.lab05.dcharl1678"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_android"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="edu.wmich.lab05.dcharl1678.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.wmich.lab05.dcharl1678.Tab1"></activity>
+        <activity android:name="edu.wmich.lab05.dcharl1678.Tab2"></activity>
+        <activity android:name="edu.wmich.lab05.dcharl1678.Tab3"></activity>
+       
+    </application>
+
+</manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Treasurer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/treasurerradiog"
+        android:src="@drawable/treasurer1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/treasurerradiog"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/treasurer2" />
+
+    <Button
+        android:id="@+id/btntreasurerback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btntreasurernext"
+        android:layout_alignBottom="@+id/btntreasurernext"
+        android:layout_toRightOf="@+id/imageView1"
+        style="@style/btnStyleBeige"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btntreasurernext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_toRightOf="@+id/textView1"
+        style="@style/btnStyleBeige"
+        android:text="Next" />
+
+    <RadioGroup
+        android:id="@+id/treasurerradiog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView2" >
+
+        <RadioButton
+            android:id="@+id/treasurerradio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="116dp"
+            android:text="@string/treasurer1" />
+
+        <RadioButton
+            android:id="@+id/treasurerradio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:text="@string/treasurer2" />
+    </RadioGroup>
+
+</RelativeLayout>

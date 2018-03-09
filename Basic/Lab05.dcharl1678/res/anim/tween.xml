@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #05
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 12/11/13
+Date completed: 12/8/13
+*************************************
+This app have 3 tabs and it shows different animations
+Tab1 Frame by Frame
+Tab2 Tween
+Tab3 Alpha
+
+it will rotate for 2 secs
+-->
+<rotate
+xmlns:android="http://schemas.android.com/apk/res/android"    
+android:fromDegrees="0"
+android:toDegrees="360"
+android:pivotX="0%"
+android:pivotY="0%"
+android:duration="2000"
+android:startOffset="0"
+/>

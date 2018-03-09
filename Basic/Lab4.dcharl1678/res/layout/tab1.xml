@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Lab #04
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 11/26/13
+Date completed: 11/25/13
+*************************************
+BookItCheap is a travel agency 
+We guarantee the best prices!
+Book your trips safe and easy with this app
+It has 6 classes
+MainActivity
+Tab1:Displays an image as a background and talks about BookItCheap
+Tab2:Lets the user choose a destination among 6 and a from and to Date
+Tab3:Shows a Gridview Image Gallery with the destinations pictures
+Tab4:Goes to a website that talks about these destinations 
+Tab5:Lets the user enter a location and a destination to book a flight
+
+In this activity there are 2 textviews one to display a picture 
+The other one to display information about the compnay BookItCheap
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+ <TextView
+        android:id="@+id/selectDest"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_weight="0.47"
+        android:background="@drawable/bookitcheap"
+        android:gravity="left"
+        android:text="@string/tab1Title"
+        android:textSize="@dimen/MainD"
+         />
+    
+     <TextView
+         android:id="@+id/info"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="0.33"
+         android:gravity="center_horizontal"
+         android:text="@string/tab1"
+         android:textColor="@color/Orange"
+         android:textStyle="bold" />
+
+</LinearLayout>

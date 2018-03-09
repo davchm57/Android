@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.teambus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+     <!--
+Programmer: TeamBus
+Final project
+CIS 4700: Mobile Commerce Development
+Spring 2014
+Due date: 04/21/14
+Date completed: 04/21/14
+*************************************
+* We added a custom icon, permissions to run functions for our application.
+*************************************
+-->
+    
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    
+    
+    <!--  this set of permissions are for the GPS and googlemaps --> 
+    <permission 
+        android:name="edu.wmich.teambus.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="edu.wmich.teambus.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+	
+	 <uses-feature 
+       android:glEsVersion="0x00020000"
+       android:required="true"/>
+	
+	
+	
+	
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+         <!-- this is required for googlemaps, dont steal my API Key :D  -->
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAtRAgqmlytvNzpfobf2O3gKogZTvjMeiI1"/>
+         <!-- 
+         Adams debug Key: AIzaSyCzFOjIO1s3B6XVl7vUhDkT3H3JlYixDps
+         Yeils debug Key: AIzaSyA35m-YFQl8W-jzk414jn9uXpZRJuHBWGI
+         David debug Key: AIzaSyC8VPmh4ZxsNdaMDU9yCPKO1f1pCfYlyBo
+         release key: AIzaSyAtRAgqmlytvNzpfobf2O3gKogZTvjMeiI1
+         
+           David: post your SHA1 key here and I will add a debug key for you, unless you have one
+         
+          -->
+         <!-- This is also require for google maps -->
+         <meta-data 
+             android:name="com.google.android.gms.version"
+             android:value="@integer/google_play_services_version"/>   
+            
+            <uses-library android:name="com.google.android.maps" />
+        
+        
+        <activity
+            android:name="edu.wmich.teambus.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BrowseRoutes"></activity>
+        <activity android:name=".DetailedInformation"></activity>
+        <activity android:name=".FavoriteRoutes"></activity>
+        <activity android:name=".Stops"></activity>
+          <activity android:name=".FavoriteStops"></activity>
+          <activity android:name=".WebActivity"></activity>
+          <activity android:name=".NearestBusStop"></activity>
+          <activity android:name=".StopMap"></activity>
+    </application>
+
+</manifest>

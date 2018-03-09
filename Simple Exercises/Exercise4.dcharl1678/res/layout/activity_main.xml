@@ -1,0 +1,115 @@
+<!-- 
+Programmer: David Charles
+Class ID: dcharl1678
+Exercise 4
+CIS 2610: Business Mobile Programming
+Fall 2013
+Due date: 10/09/13
+Date completed: 10/06/13
+*************************************
+4 Textviews
+1 Button
+1 Radio Grup which contains 3 Radio Buttons xbox,ps4,wiiu
+titleTv displays the title
+selectBtn when clicked will show whcih of the radio buttons was clicked showing a toast 
+xboxC keeps track of how many times the xbobx radio button has been clicked
+ps4C keeps track of how many times the ps4 radio button has been clicked
+wiiC keeps track of how many times the wiiU radio button has been clicked
+*************************************!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:gravity="center"
+        android:text="@string/titleText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleD" />
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consolesGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/selectB"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/consolesGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" >
+
+        <RadioButton
+            android:id="@+id/xbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/xboxText"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/ps4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ps4Text"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/wiiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wiiText"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/xboxC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/consolesGroup"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/selectBtn"
+         android:textColor="@color/green"
+        android:text="@string/xboxCText" />
+
+    <TextView
+        android:id="@+id/ps4C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xboxC"
+        android:layout_below="@+id/xboxC"
+        android:layout_marginTop="19dp"
+         android:textColor="@color/green"
+        android:text="@string/ps4CText" />
+
+    <TextView
+        android:id="@+id/wiiC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ps4C"
+          android:layout_below="@+id/ps4C"
+        android:layout_marginTop="17dp"
+         android:textColor="@color/green"
+        android:text="@string/wiiCText" />
+
+</RelativeLayout>
